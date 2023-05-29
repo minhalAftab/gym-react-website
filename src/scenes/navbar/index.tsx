@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Logo from "@/assests/Logo.png";
+import Logo from "@/assets/Logo.png";
 
 type Props = {};
 
@@ -14,7 +14,19 @@ function Navbar(props: Props) {
             {/* LEFT SIDE */}
             <img alt="logo" src={Logo} />
             {/* RIGHT SIDE  */}
-            <div className={`${flexBetween} w-full `}>/** Here fsfa */</div>
+            <div className={`${flexBetween} w-full `}>
+              <div className={`${flexBetween} gap-8 text-sm`}>
+                <p>Home</p>
+                <p>About</p>
+                <p>Benefits</p>
+                <p>Our Classes</p>
+                <p>Contact us</p>
+              </div>
+              <div className={`${flexBetween} gap-8`}>
+                <p>Sign In</p>
+                <button>Become a Member</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
