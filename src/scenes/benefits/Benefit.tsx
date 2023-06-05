@@ -8,7 +8,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 const childVariant = {
-  hiden: { opacity: 0, scale: 0.9 },
+  hidden: { opacity: 0, scale: 0.9 },
   visible: { opacity: 1, scale: 1 },
 };
 const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
